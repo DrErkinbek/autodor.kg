@@ -1,5 +1,5 @@
 const Tire = require('../models/Tire');
-const { validationResult } = require('express-validator/check');
+const { validationResult } = require('express-validator');
 
 // Route GET REQUEST Endpoint /api-v1/tires
 // GET all Tires
@@ -17,9 +17,9 @@ const getTires = async (req, res) => {
 }
 // Route GET REQUEST Endpoint /api-v1/tires/:productCode
 // GET Tire by Product Code
-const getTireByCode =  async (req, res) => {
+const getTire =  async (req, res) => {
     const productCode = req.params.productCode;
-    
+    console.log(productCode);
     try{
         const tire = await Tire.findOne({ productCode: productCode });
 
@@ -130,7 +130,7 @@ const deleteTireById = async (req, res) => {
 }
 module.exports = {
     getTires,
-    getTireByCode,
+    getTire,
     addTire,
     updateTireById,
     deleteTireById

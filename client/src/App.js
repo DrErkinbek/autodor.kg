@@ -25,6 +25,8 @@ import OrderAccessory from './components/form/OrderAccessory';
 import Error from './components/layout/404';
 
 import AccumulatorState from './context/accumulator/AccumulatorState';
+import TireState from './context/tire/TireState';
+import AccessoryState from './context/accessory/AccessoryState';
 
 const App = () => {
   useEffect(() => {
@@ -32,50 +34,86 @@ const App = () => {
     M.AutoInit();
   })
   return (
-    <AccumulatorState>
-        <Router>
-          <Header />
-            <Switch>
-              <Route exact path="/" component={Static} />
-              <Route exact path="/brands" component={BrandAccumulators} />
-              <Route exact path="/brands/:brand" render={props =>(
-                  <>
-                    <Accumulators {...props} />
-                  </>
-                )} />
-              <Route exact path="/brands/exide/:productCode" render={props =>(
-                  <>
-                    <Accumulator {...props} />
-                    <OrderAccumulator {...props} />
-                  </>
-                )} />
-                <Route exact path="/brands/kainar/:productCode" render={props =>(
-                  <>
-                    <Accumulator {...props} />
-                    <OrderAccumulator {...props} />
-                  </>
-                )} />
-              <Route exact path="/tires" component={Tires} />
-              <Route exact path="/tires/1" render={props =>(
-                  <>
-                    <Tire {...props} />
-                    <OrderTire {...props} />
-                  </>
-                )} />
-              <Route exact path="/accessories" component={Accessories} />
-              <Route exact path="/accessories/1" render={props =>(
-                  <>
-                    <Accessory {...props} />
-                    <OrderAccessory {...props} />
-                  </>
-              )} />
-              <Route component={Error} />
-            </Switch>
-          <CallBtnModal />
-          <CallButton />
-          <Footer />
-        </Router>
-    </AccumulatorState>
+    <AccessoryState>
+      <TireState>
+        <AccumulatorState>
+            <Router>
+              <Header />
+                <Switch>
+                  <Route exact path="/" component={Static} />
+                  <Route exact path="/brands" component={BrandAccumulators} />
+                  <Route exact path="/brands/:brand" render={props =>(
+                      <>
+                        <Accumulators {...props} />
+                      </>
+                    )} />
+                  <Route exact path="/brands/exide/:productCode" render={props =>(
+                      <>
+                        <Accumulator {...props} />
+                        <OrderAccumulator {...props} />
+                      </>
+                    )} />
+                    <Route exact path="/brands/bost/:productCode" render={props =>(
+                      <>
+                        <Accumulator {...props} />
+                        <OrderAccumulator {...props} />
+                      </>
+                    )} />
+                    <Route exact path="/brands/tubor/:productCode" render={props =>(
+                      <>
+                        <Accumulator {...props} />
+                        <OrderAccumulator {...props} />
+                      </>
+                    )} />
+                    <Route exact path="/brands/ista/:productCode" render={props =>(
+                      <>
+                        <Accumulator {...props} />
+                        <OrderAccumulator {...props} />
+                      </>
+                    )} />
+                    <Route exact path="/brands/gladiator/:productCode" render={props =>(
+                      <>
+                        <Accumulator {...props} />
+                        <OrderAccumulator {...props} />
+                      </>
+                    )} />
+                    <Route exact path="/brands/kainar/:productCode" render={props =>(
+                      <>
+                        <Accumulator {...props} />
+                        <OrderAccumulator {...props} />
+                      </>
+                    )} />
+                  <Route exact path="/tires" render={props =>(
+                      <>
+                        <Tires {...props} />
+                      </>
+                    )} />
+                  <Route exact path="/tires/:productCode" render={props =>(
+                      <>
+                        <Tire {...props} />
+                        <OrderTire {...props} />
+                      </>
+                    )} />
+                    <Route exact path="/accessories" render={props =>(
+                      <>
+                        <Accessories {...props} />
+                      </>
+                    )} />
+                  <Route exact path="/accessories/:productCode" render={props =>(
+                      <>
+                        <Accessory {...props} />
+                        <OrderAccessory {...props} />
+                      </>
+                  )} />
+                  <Route component={Error} />
+                </Switch>
+              <CallBtnModal />
+              <CallButton />
+              <Footer />
+            </Router>
+        </AccumulatorState>
+      </TireState>
+    </AccessoryState>
   );
 }
 

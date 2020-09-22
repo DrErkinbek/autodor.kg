@@ -20,8 +20,9 @@ const Accumulators = (props) => {
                     <div className="col s12 m3 l3 xl3" key={accumulator._id}>
                         <div className="card z-depth-4">
                             <div className="card-image">
-                                <img alt="Kainar"
-                                    src={accumulator.imageUrl} />
+                                <a href={`/brands/${accumulator.producer}/${accumulator.productCode}`}>
+                                    <img alt="Kainar" src={accumulator.imageUrl} />
+                                </a>
                             </div>
                             <div className="card-content">
                                 <p className="center product-title">{accumulator.name}</p>

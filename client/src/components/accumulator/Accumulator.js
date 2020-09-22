@@ -7,6 +7,7 @@ import M from 'materialize-css/dist/js/materialize.min.js';
 const Accumulator = (props) => {
     const accumulatorContext = useContext(AccumulatorContext);
     const {accumulator, loading, getAccumulator } = accumulatorContext;
+    
     useEffect(() => {
         const productCode = props.match.params.productCode;
         console.log(productCode);

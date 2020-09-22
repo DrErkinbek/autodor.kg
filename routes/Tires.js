@@ -4,7 +4,7 @@ const { Router } = require('express');
 // Controllers
 const { 
     getTires,
-    getTireByCode,
+    getTire,
     addTire,
     updateTireById,
     deleteTireById
@@ -19,7 +19,7 @@ router.get('/', getTires);
 
 // Route GET REQUEST Endpoint /api-v1/tires/:productCode
 // GET TIRE BY PRODUCT CODE
-router.get('/:productCode', getTireByCode);
+router.get('/:productCode', getTire);
 
 // Route POST REQUEST Endpoint /api-v1/tires/:id
 // POST TIRE
