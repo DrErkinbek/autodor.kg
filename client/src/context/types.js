@@ -8,3 +8,4 @@ export const GET_DISKS = 'GET_DISKS';
 export const GET_DISK = 'GET_DISK';
 export const GET_ACCESSORIES = 'GET_ACCESSORIES';
 export const GET_ACCESSORY = 'GET_ACCESSORY';
+export const SET_PAGE = 'SET_PAGE';

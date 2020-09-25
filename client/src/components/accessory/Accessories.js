@@ -1,10 +1,14 @@
 import React, { useContext, useEffect } from 'react';
 import AccessoryContext from '../../context/accessory/AccessoryContext';
+import PaginateContext from '../../context/pagination/PaginateContext';
 import Spinner from '../layout/Spinner';
 
 const Accessories = () => {
     const accessoryContext = useContext(AccessoryContext);
-    const { accessories, loading, getAccessories } = accessoryContext;
+    const paginateContext = useContext(PaginateContext);
+
+    const { loading, getAccessories } = accessoryContext;
+    const { currentAccessories } = paginateContext;
     
     useEffect(() => {
         getAccessories();
@@ -16,7 +20,7 @@ const Accessories = () => {
     } else {
         return(
             <div className="row">
-                {accessories.map(accessory => (
+                {currentAccessories.map(accessory => (
                     <div className="col s12 m3 l3 xl3" key={accessory._id}>
                         <div className="card z-depth-4">
                             <div className="card-image">
