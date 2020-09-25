@@ -19,7 +19,6 @@ const getTires = async (req, res) => {
 // GET Tire by Product Code
 const getTire =  async (req, res) => {
     const productCode = req.params.productCode;
-    console.log(productCode);
     try{
         const tire = await Tire.findOne({ productCode: productCode });
 

@@ -29,21 +29,25 @@ const OrderAccessory = (props) => {
     const onSubmit = e => {
         e.preventDefault();
 
-        let OrderAccessoryParams = {
-            customer_name: customer_name,
-            customer_number: customer_number,
-            order_type: order_type,
-            accessory_name: name,
-            accessory_productCode: productCode
+        if(order_type === ''){
+            M.toast({ html: 'Выберите способ доставки.', classes: 'rounded red lighten-1'});
+        } else {
+            let OrderAccessoryParams = {
+                customer_name: customer_name,
+                customer_number: customer_number,
+                order_type: order_type,
+                accessory_name: name,
+                accessory_productCode: productCode
+            }
+            emailjs.send(
+                'service_gn5xg5p',
+                'template_57hmo9t',
+                OrderAccessoryParams,
+                'user_LluexlTTpyxIb1Jzgoe6a'
+            )
+            resetForm();
+            M.toast({ html: 'Ваша заявка принято.', classes: 'rounded green lighten-1'});
         }
-        emailjs.send(
-            'service_gn5xg5p',
-            'template_57hmo9t',
-            OrderAccessoryParams,
-            'user_LluexlTTpyxIb1Jzgoe6a'
-        )
-        resetForm();
-        M.toast({ html: 'Ваша заявка принято.', classes: 'rounded green lighten-1'})
     }
 
     return(

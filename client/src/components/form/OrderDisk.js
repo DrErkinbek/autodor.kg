@@ -1,14 +1,14 @@
 import React, { useState, useContext, useEffect } from 'react';
-import TireContext from '../../context/tire/TireContext';
+import DiskContext from '../../context/disk/DiskContext';
 import emailjs from 'emailjs-com';
 import M from 'materialize-css/dist/js/materialize.min.js';
 
-const OrderTire = (props) => {
-    const tireContext = useContext(TireContext);
-    const {tire, getTire } = tireContext;
+const OrderDisk = (props) => {
+    const diskContext = useContext(DiskContext);
+    const {disk, getDisk } = diskContext;
     useEffect(() => {
         const productCode = props.match.params.productCode;
-        getTire(productCode);
+        getDisk(productCode);
         // eslint-disable-next-line
     }, []);
     const [customer, setCustomer ] = useState({
@@ -17,7 +17,7 @@ const OrderTire = (props) => {
         order_type: ''
     });
     const { customer_name, customer_number, order_type  } = customer;
-    const { name, productCode } = tire;
+    const { name, productCode } = disk;
 
     const resetForm = () => setCustomer({
         customer_name: '',
@@ -32,30 +32,31 @@ const OrderTire = (props) => {
         if(order_type === ''){
             M.toast({ html: 'Выберите способ доставки.', classes: 'rounded red lighten-1'});
         } else {
-            let OrderTireParams = {
+            let OrderDiskParams = {
                 customer_name: customer_name,
                 customer_number: customer_number,
                 order_type: order_type,
-                tire_name: name,
-                tire_productCode: productCode
+                disk_name: name,
+                disk_productCode: productCode
             }
             emailjs.send(
                 'service_gn5xg5p',
-                'template_1x4dmp4',
-                OrderTireParams,
+                'template_qb4ip4s',
+                OrderDiskParams,
                 'user_LluexlTTpyxIb1Jzgoe6a'
             )
             resetForm();
             M.toast({ html: 'Мы приняли вашу заявку', classes: 'rounded green lighten-1'});
         }
     }
+
     return(
         <div className="container">
             <div className="row">
                 <form onSubmit={onSubmit}>
                     <div className="col s12 m6 l6 xl6">
                         <div className="form-group">
-                            <label>Ваше имя</label>
+                            <label>Ваша имя</label>
                             <input className="form-control" type="text"
                             onChange={onChange} minLength="4"
                             name="customer_name" value={customer_name}
@@ -86,7 +87,7 @@ const OrderTire = (props) => {
                         </label>
                     </div>
                     <div className="form-group">
-                        <button className="waves-effect blue waves-light btn right">Оставить заявку</button>
+                        <button className="blue btn right">Оставить заявку</button>
                     </div>
                 </form>
             </div>
@@ -94,4 +95,4 @@ const OrderTire = (props) => {
     )
 }
 
-export default OrderTire;
+export default OrderDisk;

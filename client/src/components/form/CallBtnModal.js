@@ -30,7 +30,7 @@ const CallBtnModal = () => {
             'user_LluexlTTpyxIb1Jzgoe6a'
         )
         resetForm();
-        M.toast({ html: 'Спасибо, мы вам обратно звоним.', classes: 'rounded green lighten-1'})
+        M.toast({ html: 'Спасибо, мы вам обратно звоним.', classes: 'rounded green lighten-1'});
     }
 
     return(

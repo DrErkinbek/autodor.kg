@@ -16,7 +16,7 @@ app.use(express.json({ extended: false }));
 // Requesting Content-Type
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*'); 
-    res.setHeader('Access-Control-Allow-Methods', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
     next();
 });
@@ -29,10 +29,12 @@ const PORT = process.env.PORT || 5000;
 const accumulatorsRoute = require('./routes/Accumulators');
 const accessoriesRoute = require('./routes/Accessories');
 const tiresRoute = require('./routes/Tires');
+const disksRoute = require('./routes/Disks');
 
 // Define Routes
 app.use('/api-v1/accumulators', accumulatorsRoute);
 app.use('/api-v1/tires', tiresRoute);
 app.use('/api-v1/accessories', accessoriesRoute);
+app.use('/api-v1/disks', disksRoute);
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));

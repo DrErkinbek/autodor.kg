@@ -32,22 +32,26 @@ const OrderAccumulator = (props) => {
     const onSubmit = e => {
         e.preventDefault();
 
-        let OrderAccumsParams = {
-            customer_name: customer_name,
-            customer_number: customer_number,
-            customer_car: customer_car,
-            order_type: order_type,
-            accumulator_name: name,
-            accumulator_productCode: productCode
+        if(order_type === ''){
+            M.toast({ html: 'Выберите способ доставки.', classes: 'rounded red lighten-1'});
+        } else {
+            let OrderAccumsParams = {
+                customer_name: customer_name,
+                customer_number: customer_number,
+                customer_car: customer_car,
+                order_type: order_type,
+                accumulator_name: name,
+                accumulator_productCode: productCode
+            }
+            emailjs.send(
+                'service_gn5xg5p',
+                'template_x0wjybl',
+                OrderAccumsParams,
+                'user_LluexlTTpyxIb1Jzgoe6a'
+            )
+            resetForm();
+            M.toast({ html: 'Мы приняли вашу заявку', classes: 'rounded green lighten-1'});
         }
-        emailjs.send(
-            'service_gn5xg5p',
-            'template_x0wjybl',
-            OrderAccumsParams,
-            'user_LluexlTTpyxIb1Jzgoe6a'
-        )
-        resetForm();
-        M.toast({ html: 'Мы приняли вашу заявку', classes: 'rounded green lighten-1'})
     }
     return(
         <div className="container">
