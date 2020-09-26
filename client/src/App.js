@@ -34,13 +34,13 @@ import DiskState from './context/disk/DiskState';
 import AccessoryState from './context/accessory/AccessoryState';
 import PaginateState from './context/pagination/PaginateState';
 
+
 const App = () => {
   useEffect(() => {
     // Initializing Materialize JavaScript
     M.AutoInit();
-  })
+  });
   return (
-    
     <DiskState>
       <AccessoryState>
         <TireState>
@@ -137,7 +137,6 @@ const App = () => {
         </TireState>
       </AccessoryState>
     </DiskState>
-    
   );
 }
 

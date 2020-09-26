@@ -2,6 +2,7 @@ import React, { useContext, useEffect} from 'react';
 import DiskContext from '../../context/disk/DiskContext';
 import Spinner from '../layout/Spinner'
 import M from 'materialize-css/dist/js/materialize.min.js';
+import Cookies from 'js-cookie';
 
 const Disk = (props) => {
     const diskContext = useContext(DiskContext);
@@ -9,6 +10,8 @@ const Disk = (props) => {
 
     useEffect(() => {
         const productCode = props.match.params.productCode;
+        Cookies.set('servingDisk', 'keepServingDisk=true', 
+        { secure: true, expires: 7, path: `/disks/${productCode}` });
         getDisk(productCode);
         // eslint-disable-next-line
     }, []);

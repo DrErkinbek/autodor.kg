@@ -1,12 +1,15 @@
 import React, { useContext, useEffect} from 'react';
 import DiskContext from '../../context/disk/DiskContext';
 import Spinner from '../layout/Spinner';
+import Cookies from 'js-cookie';
 
 const Disks = () => {
     const diskContext = useContext(DiskContext);
     const { disks, loading, getDisks } = diskContext;
 
     useEffect(() => {
+        Cookies.set('servingDisks', 'keepServingDisks=true', 
+        { secure: true, expires: 7, path: '/disks' });
         getDisks()
         // eslint-disable-next-line
     }, []);

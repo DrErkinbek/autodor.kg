@@ -2,6 +2,7 @@ import React, { useContext, useEffect} from 'react';
 import TireContext from '../../context/tire/TireContext';
 import Spinner from '../layout/Spinner';
 import M from 'materialize-css/dist/js/materialize.min.js';
+import Cookies from 'js-cookie';
 
 const Tire = (props) => {
     const tireContext = useContext(TireContext);
@@ -9,6 +10,8 @@ const Tire = (props) => {
 
     useEffect(() => {
         const productCode = props.match.params.productCode;
+        Cookies.set('servingTire', 'keepServingTire=true', 
+        { secure: true, expires: 7, path: `/tires/${productCode}` });
         getTire(productCode);
         // eslint-disable-next-line
     }, []);

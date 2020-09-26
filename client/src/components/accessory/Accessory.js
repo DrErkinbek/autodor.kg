@@ -2,14 +2,17 @@ import React, { useContext, useEffect } from 'react';
 import AccessoryContext from '../../context/accessory/AccessoryContext';
 import Spinner from '../layout/Spinner';
 import M from 'materialize-css/dist/js/materialize.min.js';
+import Cookies from 'js-cookie'
 
 const Accessory = (props) => {
     const accessoryContext = useContext(AccessoryContext);
     const {accessory, loading, getAccessory } = accessoryContext;
 
     useEffect(() => {
-        const productCode = props.match.params.productCode
+        const productCode = props.match.params.productCode;
         getAccessory(productCode);
+        Cookies.set('servingAccessory', 'keepServingAccessory=true', 
+        { secure: true, expires: 7, path: `/accessories/${productCode}` });
         // eslint-disable-next-line
     }, [])
     const showImg = () => {

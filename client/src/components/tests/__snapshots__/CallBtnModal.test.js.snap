@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CallBtnModal renders correctly and equal to snapshot 1`] = `
+<div
+  className="modal"
+  id="call-modal"
+  style={
+    Object {
+      "height": "75%",
+      "width": "75%",
+    }
+  }
+>
+  <div
+    className="modal-content"
+  >
+    <div
+      className="modal-header right"
+    >
+      <a
+        className="modal-close waves-effect"
+        href="#!"
+      >
+        <i
+          className="small material-icons"
+        >
+          close
+        </i>
+      </a>
+    </div>
+    <div
+      className="col s12 m6 l8"
+    >
+      <form
+        onSubmit={[Function]}
+      >
+        <div
+          className="center"
+        >
+          <p>
+            Закажите обратный звонок
+          </p>
+        </div>
+        <div
+          className="input-field col s6"
+        >
+          <input
+            className="validate"
+            id="icon_prefix"
+            minLength="4"
+            name="customer_name"
+            onChange={[Function]}
+            placeholder="Ваша имя"
+            required={true}
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className="input-field col s6"
+        >
+          <input
+            className="validate"
+            id="icon_telephone"
+            minLength="9"
+            name="customer_number"
+            onChange={[Function]}
+            placeholder="Телефон номер"
+            required={true}
+            type="tel"
+            value=""
+          />
+        </div>
+        <button
+          className="blue waves-light btn-small right"
+        >
+          Отправить
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;

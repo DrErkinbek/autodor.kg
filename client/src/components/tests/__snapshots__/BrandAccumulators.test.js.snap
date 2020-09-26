@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BrandAccumulators Component renders correctly and equal to snapshot 1`] = `
+Array [
+  <div
+    className="row"
+  >
+    <div
+      className="col s6 m3 l3 xl3"
+    >
+      <div
+        className="card"
+      >
+        <div
+          className="card-image"
+        >
+          <img
+            alt="exide"
+            src="brand-exide.png"
+          />
+        </div>
+        <div
+          className="card-content center"
+        >
+          <a
+            href="/brands/exide"
+          >
+            <p
+              className="blue-text product-title"
+            >
+              EXIDE Европа
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col s6 m3 l3 xl3"
+    >
+      <div
+        className="card"
+      >
+        <div
+          className="card-image"
+        >
+          <img
+            alt="exide"
+            src="brand-bost.png"
+          />
+        </div>
+        <div
+          className="card-content center"
+        >
+          <a
+            href="/brands/bost"
+          >
+            <p
+              className="blue-text product-title"
+            >
+              BOST Корея
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col s6 m3 l3 xl3"
+    >
+      <div
+        className="card"
+      >
+        <div
+          className="card-image"
+        >
+          <img
+            alt="exide"
+            src="brand-tubor.png"
+          />
+        </div>
+        <div
+          className="card-content center"
+        >
+          <a
+            href="/brands/tubor"
+          >
+            <p
+              className="blue-text product-title"
+            >
+              TUBOR Россия
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col s6 m3 l3 xl3"
+    >
+      <div
+        className="card"
+      >
+        <div
+          className="card-image"
+        >
+          <img
+            alt="exide"
+            src="brand-ista.png"
+          />
+        </div>
+        <div
+          className="card-content center"
+        >
+          <a
+            href="/brands/ista"
+          >
+            <p
+              className="blue-text product-title"
+            >
+              ISTA Украина
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="row"
+  >
+    <div
+      className="col s6 m3 l3 xl3"
+    >
+      <div
+        className="card"
+      >
+        <div
+          className="card-image"
+        >
+          <img
+            alt="exide"
+            src="brand-gladiator.png"
+          />
+        </div>
+        <div
+          className="card-content center"
+        >
+          <a
+            href="/brands/gladiator"
+          >
+            <p
+              className="blue-text product-title"
+            >
+              GLADIATOR Россия
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="col s6 m3 l3 xl3"
+    >
+      <div
+        className="card"
+      >
+        <div
+          className="card-image"
+        >
+          <img
+            alt="exide"
+            src="brand-kainar.png"
+          />
+        </div>
+        <div
+          className="card-content center"
+        >
+          <a
+            href="/brands/kainar"
+          >
+            <p
+              className="blue-text product-title"
+            >
+              KAINAR Казакстан
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;

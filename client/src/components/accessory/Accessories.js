@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import AccessoryContext from '../../context/accessory/AccessoryContext';
 import PaginateContext from '../../context/pagination/PaginateContext';
 import Spinner from '../layout/Spinner';
+import Cookies from 'js-cookie';
 
 const Accessories = () => {
     const accessoryContext = useContext(AccessoryContext);
@@ -11,6 +12,8 @@ const Accessories = () => {
     const { currentAccessories } = paginateContext;
     
     useEffect(() => {
+        Cookies.set('servingAccessories', 'keepServingAccessories=true', 
+        { secure: true, expires: 7, path: '/accessories' });
         getAccessories();
         // eslint-disable-next-line
     }, []);

@@ -1,0 +1,911 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Static renders correctly and equal to snapshot 1`] = `
+Array [
+  <div
+    className="slider"
+  >
+    <ul
+      className="slides"
+    >
+      <li>
+        <img
+          alt="автопарк бишкек"
+          src="slider1.jpg"
+        />
+        <div
+          className="caption center-align"
+        >
+          <h4
+            className="white-text"
+          >
+            АККУМУЛЯТОРЫ для любых транспортных средств.
+          </h4>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="шины бишкек"
+          src="slider2.jpg"
+        />
+        <div
+          className="caption center-align"
+        >
+          <h4
+            className="yellow-text"
+          >
+            Шины и диски.
+          </h4>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="автоаксессуары бишкек"
+          src="slider3.jpg"
+        />
+        <div
+          className="caption right-align"
+        >
+          <h4
+            className="yellow-text"
+          >
+            Автоаксессуары.
+          </h4>
+        </div>
+      </li>
+    </ul>
+  </div>,
+  <section
+    className="section section-popular scrollspy"
+    id="popular"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <h4
+          className="center"
+        >
+          <span
+            className="blue-text"
+          >
+            Каталог
+          </span>
+           товаров
+        </h4>
+        <div
+          className="col s12 m4"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="card-image"
+            >
+              <img
+                alt="аккумулятор бишкек"
+                src="card1.jpg"
+              />
+            </div>
+            <div
+              className="card-content center"
+            >
+              <a
+                className="blue-text flow-text"
+                href="/brands"
+              >
+                Аккумуляторы
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col s12 m4"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="card-image"
+            >
+              <img
+                alt="шины бишкек"
+                src="card2.jpg"
+              />
+            </div>
+            <div
+              className="card-content center"
+            >
+              <a
+                className="blue-text flow-text"
+                href="/tires"
+              >
+                Шины
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col s12 m4"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="card-image"
+            >
+              <img
+                alt="автоаксессуары бишкек"
+                src="card3.jpg"
+              />
+            </div>
+            <div
+              className="card-content center"
+            >
+              <a
+                className="blue-text flow-text center-align"
+                href="/accessories"
+              >
+                Аксессуары
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>,
+  <div
+    className="container"
+  >
+    <div
+      className="section"
+    >
+      <div
+        className="row"
+      >
+        <div>
+          <h4
+            className="center blue-text"
+          >
+            Преимущества работа с нами
+          </h4>
+        </div>
+        <div
+          className="col s12 m4"
+        >
+          <div
+            className="icon-block"
+          >
+            <h2
+              className="center yellow-text"
+            >
+              <i
+                className="material-icons"
+              >
+                check_box
+              </i>
+            </h2>
+            <h5
+              className="center blue-text"
+            >
+              Качественно
+            </h5>
+            <p
+              className="light center"
+            >
+              Подбор АКБ квалифицированными специалистами, гарантия и обслуживание.
+            </p>
+          </div>
+        </div>
+        <div
+          className="col s12 m4"
+        >
+          <div
+            className="icon-block"
+          >
+            <h2
+              className="center yellow-text"
+            >
+              <i
+                className="material-icons"
+              >
+                local_grocery_store
+              </i>
+            </h2>
+            <h5
+              className="center blue-text"
+            >
+              Бесплатно
+            </h5>
+            <p
+              className="center"
+            >
+              Бесплатная доставка по Бишкеку и замена АКБ, диагностика электрооборудования автомобиля.
+            </p>
+          </div>
+        </div>
+        <div
+          className="col s12 m4"
+        >
+          <div
+            className="icon-block"
+          >
+            <h2
+              className="center yellow-text"
+            >
+              <i
+                className="material-icons"
+              >
+                card_giftcard
+              </i>
+            </h2>
+            <h5
+              className="center blue-text"
+            >
+              Выгодно
+            </h5>
+            <p
+              className="center"
+            >
+              Прием старого АКБ на утилизацию или в зачет нового по выгодной цене.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className="row"
+      >
+        <div
+          className="col s12 m4"
+        >
+          <div
+            className="icon-block"
+          >
+            <h2
+              className="center yellow-text"
+            >
+              <i
+                className="material-icons"
+              >
+                access_time
+              </i>
+            </h2>
+            <h5
+              className="center blue-text"
+            >
+              Надежно
+            </h5>
+            <p
+              className="center"
+            >
+              Официальная гарантия и послегарантийное обслуживание.
+            </p>
+          </div>
+        </div>
+        <div
+          className="col s12 m4"
+        >
+          <div
+            className="icon-block"
+          >
+            <h2
+              className="center yellow-text"
+            >
+              <i
+                className="material-icons"
+              >
+                monetization_on
+              </i>
+            </h2>
+            <h5
+              className="center blue-text"
+            >
+              УДОБНО
+            </h5>
+            <p
+              className="center"
+            >
+              Оплата наличными на месте.
+            </p>
+          </div>
+        </div>
+        <div
+          className="col s12 m4"
+        >
+          <div
+            className="icon-block"
+          >
+            <h2
+              className="center yellow-text"
+            >
+              <i
+                className="material-icons"
+              >
+                flash_on
+              </i>
+            </h2>
+            <h5
+              className="center blue-text"
+            >
+              ЗАРЯДИМ
+            </h5>
+            <p
+              className="center"
+            >
+              Прикуривание автомобиля, диагностика и восстановление старой батареи в нашем центре.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="row"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="col s12 center"
+      >
+        <h5
+          className="center brown-text"
+        >
+          Мы работаем напрямую с производителями
+        </h5>
+        <br />
+        <div
+          className="row"
+        >
+          <div
+            className="col s4 center-align"
+          >
+            <img
+              alt="аккумулятор bost"
+              className="responsive-img"
+              src="bost-logo.jpg"
+            />
+          </div>
+          <div
+            className="col s4 center-align"
+          >
+            <img
+              alt="аккумулятор exide"
+              className="responsive-img"
+              src="exide-logo.png"
+            />
+          </div>
+          <div
+            className="col s4 center-align"
+          >
+            <img
+              alt="аккумулятор tubor"
+              className="responsive-img"
+              src="tubor-logo.png"
+            />
+          </div>
+        </div>
+        <div
+          className="row"
+        >
+          <div
+            className="col s4 center-align"
+          >
+            <img
+              alt="аккумулятор ista"
+              className="responsive-img"
+              src="ista-logo.png"
+            />
+          </div>
+          <div
+            className="col s4 center-align"
+          >
+            <img
+              alt="аккумулятор кайнар"
+              className="responsive-img"
+              src="kainar-logo.png"
+            />
+          </div>
+          <div
+            className="col s4 center-align"
+          >
+            <img
+              alt="аккумулятор gladiator"
+              className="responsive-img"
+              src="gladiator-logo.jpg"
+            />
+          </div>
+        </div>
+        <div
+          className="row"
+        >
+          <div
+            className="col s4 center-align"
+          >
+            <img
+              alt="шина wideway"
+              className="responsive-img"
+              src="wideway-logo.png"
+            />
+          </div>
+          <div
+            className="col s4 center-align"
+          >
+            <img
+              alt="шина hilo"
+              className="responsive-img"
+              src="hilo-logo.png"
+            />
+          </div>
+          <div
+            className="col s4 center-align"
+          >
+            <img
+              alt="шина durun"
+              className="responsive-img"
+              src="durun-logo.jpg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`renders correctly and equal to snapshot 1`] = `
+Array [
+  <div
+    className="slider"
+  >
+    <ul
+      className="slides"
+    >
+      <li>
+        <img
+          alt="автопарк бишкек"
+          src="slider1.jpg"
+        />
+        <div
+          className="caption center-align"
+        >
+          <h4
+            className="white-text"
+          >
+            АККУМУЛЯТОРЫ для любых транспортных средств.
+          </h4>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="шины бишкек"
+          src="slider2.jpg"
+        />
+        <div
+          className="caption center-align"
+        >
+          <h4
+            className="yellow-text"
+          >
+            Шины и диски.
+          </h4>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="автоаксессуары бишкек"
+          src="slider3.jpg"
+        />
+        <div
+          className="caption right-align"
+        >
+          <h4
+            className="yellow-text"
+          >
+            Автоаксессуары.
+          </h4>
+        </div>
+      </li>
+    </ul>
+  </div>,
+  <section
+    className="section section-popular scrollspy"
+    id="popular"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <h4
+          className="center"
+        >
+          <span
+            className="blue-text"
+          >
+            Каталог
+          </span>
+           товаров
+        </h4>
+        <div
+          className="col s12 m4"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="card-image"
+            >
+              <img
+                alt="аккумулятор бишкек"
+                src="card1.jpg"
+              />
+            </div>
+            <div
+              className="card-content center"
+            >
+              <a
+                className="blue-text flow-text"
+                href="/brands"
+              >
+                Аккумуляторы
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col s12 m4"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="card-image"
+            >
+              <img
+                alt="шины бишкек"
+                src="card2.jpg"
+              />
+            </div>
+            <div
+              className="card-content center"
+            >
+              <a
+                className="blue-text flow-text"
+                href="/tires"
+              >
+                Шины
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col s12 m4"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="card-image"
+            >
+              <img
+                alt="автоаксессуары бишкек"
+                src="card3.jpg"
+              />
+            </div>
+            <div
+              className="card-content center"
+            >
+              <a
+                className="blue-text flow-text center-align"
+                href="/accessories"
+              >
+                Аксессуары
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>,
+  <div
+    className="container"
+  >
+    <div
+      className="section"
+    >
+      <div
+        className="row"
+      >
+        <div>
+          <h4
+            className="center blue-text"
+          >
+            Преимущества работа с нами
+          </h4>
+        </div>
+        <div
+          className="col s12 m4"
+        >
+          <div
+            className="icon-block"
+          >
+            <h2
+              className="center yellow-text"
+            >
+              <i
+                className="material-icons"
+              >
+                check_box
+              </i>
+            </h2>
+            <h5
+              className="center blue-text"
+            >
+              Качественно
+            </h5>
+            <p
+              className="light center"
+            >
+              Подбор АКБ квалифицированными специалистами, гарантия и обслуживание.
+            </p>
+          </div>
+        </div>
+        <div
+          className="col s12 m4"
+        >
+          <div
+            className="icon-block"
+          >
+            <h2
+              className="center yellow-text"
+            >
+              <i
+                className="material-icons"
+              >
+                local_grocery_store
+              </i>
+            </h2>
+            <h5
+              className="center blue-text"
+            >
+              Бесплатно
+            </h5>
+            <p
+              className="center"
+            >
+              Бесплатная доставка по Бишкеку и замена АКБ, диагностика электрооборудования автомобиля.
+            </p>
+          </div>
+        </div>
+        <div
+          className="col s12 m4"
+        >
+          <div
+            className="icon-block"
+          >
+            <h2
+              className="center yellow-text"
+            >
+              <i
+                className="material-icons"
+              >
+                card_giftcard
+              </i>
+            </h2>
+            <h5
+              className="center blue-text"
+            >
+              Выгодно
+            </h5>
+            <p
+              className="center"
+            >
+              Прием старого АКБ на утилизацию или в зачет нового по выгодной цене.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className="row"
+      >
+        <div
+          className="col s12 m4"
+        >
+          <div
+            className="icon-block"
+          >
+            <h2
+              className="center yellow-text"
+            >
+              <i
+                className="material-icons"
+              >
+                access_time
+              </i>
+            </h2>
+            <h5
+              className="center blue-text"
+            >
+              Надежно
+            </h5>
+            <p
+              className="center"
+            >
+              Официальная гарантия и послегарантийное обслуживание.
+            </p>
+          </div>
+        </div>
+        <div
+          className="col s12 m4"
+        >
+          <div
+            className="icon-block"
+          >
+            <h2
+              className="center yellow-text"
+            >
+              <i
+                className="material-icons"
+              >
+                monetization_on
+              </i>
+            </h2>
+            <h5
+              className="center blue-text"
+            >
+              УДОБНО
+            </h5>
+            <p
+              className="center"
+            >
+              Оплата наличными на месте.
+            </p>
+          </div>
+        </div>
+        <div
+          className="col s12 m4"
+        >
+          <div
+            className="icon-block"
+          >
+            <h2
+              className="center yellow-text"
+            >
+              <i
+                className="material-icons"
+              >
+                flash_on
+              </i>
+            </h2>
+            <h5
+              className="center blue-text"
+            >
+              ЗАРЯДИМ
+            </h5>
+            <p
+              className="center"
+            >
+              Прикуривание автомобиля, диагностика и восстановление старой батареи в нашем центре.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="row"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="col s12 center"
+      >
+        <h5
+          className="center brown-text"
+        >
+          Мы работаем напрямую с производителями
+        </h5>
+        <br />
+        <div
+          className="row"
+        >
+          <div
+            className="col s4 center-align"
+          >
+            <img
+              alt="аккумулятор bost"
+              className="responsive-img"
+              src="bost-logo.jpg"
+            />
+          </div>
+          <div
+            className="col s4 center-align"
+          >
+            <img
+              alt="аккумулятор exide"
+              className="responsive-img"
+              src="exide-logo.png"
+            />
+          </div>
+          <div
+            className="col s4 center-align"
+          >
+            <img
+              alt="аккумулятор tubor"
+              className="responsive-img"
+              src="tubor-logo.png"
+            />
+          </div>
+        </div>
+        <div
+          className="row"
+        >
+          <div
+            className="col s4 center-align"
+          >
+            <img
+              alt="аккумулятор ista"
+              className="responsive-img"
+              src="ista-logo.png"
+            />
+          </div>
+          <div
+            className="col s4 center-align"
+          >
+            <img
+              alt="аккумулятор кайнар"
+              className="responsive-img"
+              src="kainar-logo.png"
+            />
+          </div>
+          <div
+            className="col s4 center-align"
+          >
+            <img
+              alt="аккумулятор gladiator"
+              className="responsive-img"
+              src="gladiator-logo.jpg"
+            />
+          </div>
+        </div>
+        <div
+          className="row"
+        >
+          <div
+            className="col s4 center-align"
+          >
+            <img
+              alt="шина wideway"
+              className="responsive-img"
+              src="wideway-logo.png"
+            />
+          </div>
+          <div
+            className="col s4 center-align"
+          >
+            <img
+              alt="шина hilo"
+              className="responsive-img"
+              src="hilo-logo.png"
+            />
+          </div>
+          <div
+            className="col s4 center-align"
+          >
+            <img
+              alt="шина durun"
+              className="responsive-img"
+              src="durun-logo.jpg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;

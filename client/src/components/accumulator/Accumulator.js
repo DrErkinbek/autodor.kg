@@ -10,7 +10,6 @@ const Accumulator = (props) => {
     
     useEffect(() => {
         const productCode = props.match.params.productCode;
-        console.log(productCode);
         getAccumulator(productCode);
         // eslint-disable-next-line
     }, []);

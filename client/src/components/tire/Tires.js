@@ -1,12 +1,15 @@
 import React, { useContext, useEffect} from 'react';
 import TireContext from '../../context/tire/TireContext';
 import Spinner from '../layout/Spinner';
+import Cookies from 'js-cookie';
 
 const Tires = () => {
     const tireContext = useContext(TireContext);
     const {tires, loading, getTires} = tireContext;
 
     useEffect(() => {
+        Cookies.set('servingTires', 'keepServingTires=true', 
+        { secure: true, expires: 7, path: '/tires' });
         getTires()
         // eslint-disable-next-line
     }, []);

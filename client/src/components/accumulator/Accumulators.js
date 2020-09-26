@@ -3,6 +3,7 @@ import AccumulatorContext from '../../context/accumulator/AccumulatorContext';
 import Spinner from '../layout/Spinner';
 
 const Accumulators = (props) => {
+    
     const accumulatorContext = useContext(AccumulatorContext);
     const {accumulators, loading, getAccumulatorByBrand } = accumulatorContext;
     useEffect(() => {
