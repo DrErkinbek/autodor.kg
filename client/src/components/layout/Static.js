@@ -56,38 +56,46 @@ const Static = () => {
             </ul>
         </div>
         <section id="popular" className="section section-popular scrollspy">
-            <div className="container">
-                <div className="row">
-                    <h4 className="center">
-                    <span className="blue-text">Каталог</span> товаров</h4>
-                    <div className="col s12 m4">
-                        <div className="card">
-                            <div className="card-image">
-                                <img src={cardImg1} alt="аккумулятор бишкек" />
-                            </div>
-                            <div className="card-content center">
-                                <a href="/brands" className="blue-text flow-text">Аккумуляторы</a>
-                            </div>
+            <div className="row">
+                <h4 className="center">
+                <span className="blue-text">Каталог</span> товаров</h4>
+                <div className="col s12 m3">
+                    <div className="card">
+                        <div className="card-image">
+                            <img src={cardImg1} alt="аккумулятор бишкек" />
+                        </div>
+                        <div className="card-content center">
+                            <a href="/brands" className="blue-text flow-text">Аккумуляторы</a>
                         </div>
                     </div>
-                    <div className="col s12 m4">
-                        <div className="card">
-                            <div className="card-image">
-                                <img src={cardImg2} alt="шины бишкек" />
-                            </div>
-                            <div className="card-content center">
-                                <a href="/tires" className="blue-text flow-text">Шины</a>
-                            </div>
+                </div>
+                <div className="col s12 m3">
+                    <div className="card">
+                        <div className="card-image">
+                            <img src={cardImg2} alt="шины бишкек" />
+                        </div>
+                        <div className="card-content center">
+                            <a href="/tires" className="blue-text flow-text">Шины</a>
                         </div>
                     </div>
-                    <div className="col s12 m4">
-                        <div className="card">
-                            <div className="card-image">
-                                <img src={cardImg3} alt="автоаксессуары бишкек" />
-                            </div>
-                            <div className="card-content center">
-                                <a href="/accessories" className="blue-text flow-text center-align">Аксессуары</a>
-                            </div>
+                </div>
+                <div className="col s12 m3">
+                    <div className="card">
+                        <div className="card-image">
+                            <img src="http://autodor.net.kg/dist/disks/disk1.png" alt="шины бишкек" />
+                        </div>
+                        <div className="card-content center">
+                            <a href="/disks" className="blue-text flow-text">Диски</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="col s12 m3">
+                    <div className="card">
+                        <div className="card-image">
+                            <img src={cardImg3} alt="автоаксессуары бишкек" />
+                        </div>
+                        <div className="card-content center">
+                            <a href="/accessories" className="blue-text flow-text center-align">Аксессуары</a>
                         </div>
                     </div>
                 </div>
