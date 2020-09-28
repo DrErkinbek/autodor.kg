@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import {BrowserRouter as Router, Route,  Switch } from "react-router-dom";
+import { Router, Route,  Switch } from "react-router-dom";
 import './App.css';
 
 // Assigning Materialize to React Application
@@ -34,6 +34,20 @@ import DiskState from './context/disk/DiskState';
 import AccessoryState from './context/accessory/AccessoryState';
 import PaginateState from './context/pagination/PaginateState';
 
+import ReactGA from 'react-ga';
+
+import { createBrowserHistory } from 'history';
+
+const trackingId = "UA-179171274-1"; // Replace with your Google Analytics tracking ID
+ReactGA.initialize(trackingId);
+
+const history = createBrowserHistory();
+
+// Initialize google analytics page view tracking
+history.listen(location => {
+  ReactGA.set({ page: location.pathname }); // Update the user's current page
+  ReactGA.pageview(location.pathname); // Record a pageview for the given page
+});
 
 const App = () => {
   useEffect(() => {
@@ -46,7 +60,7 @@ const App = () => {
         <TireState>
           <AccumulatorState>
             <PaginateState>
-              <Router>
+              <Router history={history}>
                 <Header />
                   <Switch>
                       <Route exact path="/" component={Static} />

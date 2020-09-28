@@ -34,7 +34,7 @@ const Disks = () => {
                                 </div>
                                 <div className="card-action">
                                     <div className="center">
-                                        <a href={`/disks/${disk.productCode}`} className="waves-effect waves-light blue btn-small center">Подробнее</a>
+                                        <a href={`/disks/${disk.productCode}`} className="blue btn-small center">Подробнее</a>
                                     </div>
                                 </div>
                             </div>

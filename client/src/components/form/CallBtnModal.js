@@ -56,7 +56,7 @@ const CallBtnModal = () => {
                                 placeholder="Телефон номер" name="customer_number" value={customer_number}
                                 required />
                             </div>
-                            <button className="blue waves-light btn-small right">Отправить</button>
+                            <button className="blue btn-small right">Отправить</button>
                         </form>
                     </div>
             </div>

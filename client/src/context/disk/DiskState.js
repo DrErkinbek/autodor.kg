@@ -23,7 +23,7 @@ const DiskState = (props) => {
     const getDisks = async () => {
         setLoading();
 
-        const response = await fetch(`http://localhost:5000/api-v1/disks`, {
+        const response = await fetch(`http://autodor.com.kg/api-v1/disks`, {
             method: 'GET',
             headers: {
                 'Accept': 'application/json'
@@ -39,7 +39,7 @@ const DiskState = (props) => {
     const getDisk = async (productCode) => {
         setLoading();
 
-        const response = await fetch(`http://localhost:5000/api-v1/disks/disk/${productCode}`, {
+        const response = await fetch(`http://autodor.com.kg/api-v1/disks/disk/${productCode}`, {
             method: 'GET',
             headers: {
                 'Accept': 'application/json'

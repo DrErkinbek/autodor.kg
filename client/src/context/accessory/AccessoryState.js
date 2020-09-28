@@ -22,7 +22,7 @@ const AccessoryState = (props) => {
     const getAccessories = async () => {
         setLoading();
 
-        const response = await fetch(`http://localhost:5000/api-v1/accessories`, {
+        const response = await fetch(`http://autodor.com.kg/api-v1/accessories`, {
             method: 'GET',
             headers: {
                 'Accept': 'application/json'
@@ -38,7 +38,7 @@ const AccessoryState = (props) => {
     const getAccessory = async (productCode) => {
         setLoading();
 
-        const response = await fetch(`http://localhost:5000/api-v1/accessories/${productCode}`, {
+        const response = await fetch(`http://autodor.com.kg/api-v1/accessories/${productCode}`, {
             method: 'GET',
             headers: {
                 'Accept': 'application/json'

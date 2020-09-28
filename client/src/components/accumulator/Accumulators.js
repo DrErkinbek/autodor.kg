@@ -32,7 +32,7 @@ const Accumulators = (props) => {
                             <div className="card-action">
                                 <div className="center">
                                     <a href={`/brands/${accumulator.producer}/${accumulator.productCode}`}
-                                    className="waves-effect blue waves-light btn-small center">Подробнее</a>
+                                    className="blue btn-small center">Подробнее</a>
                                 </div>
                             </div>
                         </div>

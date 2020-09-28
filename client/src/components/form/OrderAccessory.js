@@ -86,7 +86,7 @@ const OrderAccessory = (props) => {
                         </label>
                     </div>
                     <div className="form-group">
-                        <button className="waves-effect blue btn right">Оставить заявку</button>
+                        <button className="blue btn right">Оставить заявку</button>
                     </div>
                 </form>
             </div>

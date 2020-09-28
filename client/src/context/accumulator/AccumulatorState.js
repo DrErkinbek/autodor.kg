@@ -38,7 +38,7 @@ const AccumulatorState = (props) => {
     const getAccumulatorByBrand = async (brand) => {
         setLoading();
 
-        const response = await fetch(`http://localhost:5000/api-v1/accumulators/${brand}`, {
+        const response = await fetch(`http://autodor.com.kg/api-v1/accumulators/${brand}`, {
             method: 'GET',
             headers: {
                 'Accept': 'application/json'
@@ -54,7 +54,7 @@ const AccumulatorState = (props) => {
     const getAccumulator = async (productCode) => {
         setLoading();
 
-        const response = await fetch(`http://localhost:5000/api-v1/accumulators/accumulator/${productCode}`, {
+        const response = await fetch(`http://autodor.com.kg/api-v1/accumulators/accumulator/${productCode}`, {
             method: 'GET',
             headers: {
                 'Accept': 'application/json'

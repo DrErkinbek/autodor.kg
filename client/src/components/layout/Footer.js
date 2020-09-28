@@ -9,9 +9,9 @@ const Footer = () => {
                         <h5 className="yellow-text center">Наш адресс:</h5>
                         <p className="grey-text text-lighten-4 center">Дордой, Кожевенная 36а/2</p>
                         <div className="center">
-                            <a className="waves-effect blue darken-1 btn" 
+                            <a className="blue darken-1 btn" 
                             href="https://2gis.kg/bishkek/search/%D0%B0%D0%B2%D1%82%D0%BE%D1%81%D1%82%D0%B0%D1%80%D1%82%20%D0%B4%D0%BE%D1%80%D0%B4%D0%BE%D0%B9/firm/70000001041801737/74.621242%2C42.947197?m=74.621263%2C42.947176%2F15.54">
-                                <i className="material-icons right">place</i>Как добраться?
+                            Как добраться?
                             </a>
                         </div>
                     </div>

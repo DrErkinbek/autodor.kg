@@ -23,7 +23,7 @@ const TireState = (props) => {
     const getTires = async () => {
         setLoading();
 
-        const response = await fetch(`http://localhost:5000/api-v1/tires`, {
+        const response = await fetch(`http://autodor.com.kg/api-v1/tires`, {
             method: 'GET',
             headers: {
                 'Accept': 'application/json'
@@ -39,7 +39,7 @@ const TireState = (props) => {
     const getTire = async (productCode) => {
         setLoading();
 
-        const response = await fetch(`http://localhost:5000/api-v1/tires/${productCode}`, {
+        const response = await fetch(`http://autodor.com.kg/api-v1/tires/tire/${productCode}`, {
             method: 'GET',
             headers: {
                 'Accept': 'application/json'

@@ -40,7 +40,7 @@ const Accessories = () => {
                             <div className="card-action">
                                 <div className="center">
                                     <a href={`/accessories/${accessory.productCode}`} 
-                                    className="waves-effect waves-light blue btn-small center">Подробнее</a>
+                                    className="blue btn-small center">Подробнее</a>
                                 </div>
                             </div>
                         </div>

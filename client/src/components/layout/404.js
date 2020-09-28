@@ -9,7 +9,7 @@ const Error = () => {
                     <p className="notfound-tag-1 center center">Страница не найдена!!!</p>
                     <br />
                     <div className="center">
-                        <a href="/" className="waves-effect waves-light btn blue"><i className="material-icons left">reply</i>Назад в Главную</a>
+                        <a href="/" className="btn blue"><i className="material-icons left">reply</i>Назад в Главную</a>
                     </div>
                 </div>
             </div>
