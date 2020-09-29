@@ -27,7 +27,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="col s12 l4 m4 xl4">
-                        <h5 className="yellow-text center">Телефон номер:</h5>
+                        <h5 className="yellow-text center">Свяжитесь с нами:</h5>
                         <ul>
                             <li>
                                 <h6 className="white-text center">0770 38 72 34</h6>

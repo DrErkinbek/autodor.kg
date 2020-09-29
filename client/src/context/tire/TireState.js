@@ -16,10 +16,8 @@ const TireState = (props) => {
     }
     const [state, dispatch] = useReducer(tireReducer, initialState);
 
-    //Set loading
     const setLoading = () => dispatch({ type: SET_LOADING });
 
-    // Get Tires
     const getTires = async () => {
         setLoading();
 
@@ -35,7 +33,7 @@ const TireState = (props) => {
             payload: json
         });
     }
-    // get Tire by Product Code
+    
     const getTire = async (productCode) => {
         setLoading();
 

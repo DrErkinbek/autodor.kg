@@ -37,7 +37,9 @@ const CallBtnModal = () => {
         <div id="call-modal" className="modal" style={modalStyle}>
             <div className="modal-content">
                     <div className="modal-header right">
-                        <a href="#!" className="modal-close waves-effect"><i className="small material-icons">close</i></a>
+                        <a href="#!" className="modal-close waves-effect">
+                            <i className="small material-icons">close</i>
+                        </a>
                     </div>
                     <div className="col s12 m6 l8">
                         <form onSubmit={onSubmit}>

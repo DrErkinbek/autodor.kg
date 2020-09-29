@@ -16,9 +16,8 @@ const AccumulatorState = (props) => {
     }
     const [state, dispatch] = useReducer(accumulatorReducer, initialState);
 
-    //Set loading
     const setLoading = () => dispatch({ type: SET_LOADING });
-    // Get Accumulators
+    
     const getAccumulators = async () => {
         setLoading();
 
@@ -34,7 +33,7 @@ const AccumulatorState = (props) => {
             payload: json
         });
     }
-    // get Accumulator
+    
     const getAccumulatorByBrand = async (brand) => {
         setLoading();
 
@@ -50,7 +49,7 @@ const AccumulatorState = (props) => {
             payload: json
         });
     }
-    // get Accumulator
+    
     const getAccumulator = async (productCode) => {
         setLoading();
 

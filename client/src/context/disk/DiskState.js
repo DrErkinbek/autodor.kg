@@ -16,10 +16,8 @@ const DiskState = (props) => {
     }
     const [state, dispatch] = useReducer(diskReducer, initialState);
 
-    //Set loading
     const setLoading = () => dispatch({ type: SET_LOADING });
 
-    // Get Disks
     const getDisks = async () => {
         setLoading();
 
@@ -35,7 +33,7 @@ const DiskState = (props) => {
             payload: json
         });
     }
-    // get Disk by Product Code
+
     const getDisk = async (productCode) => {
         setLoading();
 

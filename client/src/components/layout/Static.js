@@ -8,6 +8,7 @@ import slide3 from '../images/slider3.jpg';
 import cardImg1 from '../images/card1.jpg';
 import cardImg2 from '../images/card2.jpg';
 import cardImg3 from '../images/card3.jpg';
+import cardImg4 from '../images/card4.jpg';
 
 import bostLogo from '../images/bost-logo.jpg';
 import gladiatorLogo from '../images/gladiator-logo.jpg';
@@ -50,7 +51,7 @@ const Static = () => {
                 <li>
                     <img src={slide3} alt="автоаксессуары бишкек" />
                     <div className="caption right-align">
-                        <h4 className="yellow-text">Автоаксессуары.</h4>
+                        <h4 className="blue-text">Автоаксессуары.</h4>
                     </div>
                 </li>
             </ul>
@@ -62,7 +63,9 @@ const Static = () => {
                 <div className="col s12 m3">
                     <div className="card">
                         <div className="card-image">
-                            <img src={cardImg1} alt="аккумулятор бишкек" />
+                            <a href="/brands">
+                                <img src={cardImg1} alt="аккумулятор бишкек" />
+                            </a>
                         </div>
                         <div className="card-content center">
                             <a href="/brands" className="blue-text flow-text">Аккумуляторы</a>
@@ -72,7 +75,9 @@ const Static = () => {
                 <div className="col s12 m3">
                     <div className="card">
                         <div className="card-image">
-                            <img src={cardImg2} alt="шины бишкек" />
+                            <a href="/tires">
+                                <img src={cardImg2} alt="шины бишкек" />
+                            </a>
                         </div>
                         <div className="card-content center">
                             <a href="/tires" className="blue-text flow-text">Шины</a>
@@ -82,7 +87,9 @@ const Static = () => {
                 <div className="col s12 m3">
                     <div className="card">
                         <div className="card-image">
-                            <img src="http://autodor.net.kg/dist/disks/disk1.png" alt="шины бишкек" />
+                            <a href="/disks">
+                                <img src={cardImg3} alt="шины бишкек" />
+                            </a>
                         </div>
                         <div className="card-content center">
                             <a href="/disks" className="blue-text flow-text">Диски</a>
@@ -92,7 +99,9 @@ const Static = () => {
                 <div className="col s12 m3">
                     <div className="card">
                         <div className="card-image">
-                            <img src={cardImg3} alt="автоаксессуары бишкек" />
+                            <a href="/accessories">
+                                <img src={cardImg4} alt="автоаксессуары бишкек" />
+                            </a>
                         </div>
                         <div className="card-content center">
                             <a href="/accessories" className="blue-text flow-text center-align">Аксессуары</a>
@@ -110,7 +119,7 @@ const Static = () => {
                             <h2 className="center yellow-text"><i className="material-icons">check_box</i></h2>
                             <h5 className="center blue-text">Качественно</h5>
                             
-                            <p className="light center">Подбор АКБ квалифицированными специалистами, гарантия и обслуживание.</p>
+                            <p className="center">Подбор АКБ квалифицированным специалистам, гарантия и обслуживание.</p>
                         </div>
                     </div>
 

@@ -1,7 +1,6 @@
 import React, {useContext, useEffect } from 'react';
 import AccumulatorContext from '../../context/accumulator/AccumulatorContext';
 import Spinner from '../layout/Spinner';
-
 import M from 'materialize-css/dist/js/materialize.min.js';
 
 const Accumulator = (props) => {

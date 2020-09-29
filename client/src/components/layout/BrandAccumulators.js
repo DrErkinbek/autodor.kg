@@ -23,40 +23,56 @@ const BrandAccumulators = () => {
             <div className="col s6 m3 l3 xl3">
                 <div className="card">
                     <div className="card-image">
-                        <img src={exideBr} alt="exide" />
+                        <a href={`/brands/${exide}`}>
+                            <img src={exideBr} alt="exide" />
+                        </a>
                     </div>
                     <div className="card-content center">
-                        <a href={`/brands/${exide}`}><p className="blue-text product-title">EXIDE Европа</p></a>
+                        <a href={`/brands/${exide}`}>
+                            <p className="blue-text product-title">EXIDE Европа</p>
+                        </a>
                     </div>
                 </div>
             </div>
             <div className="col s6 m3 l3 xl3">
                 <div className="card">
                     <div className="card-image">
-                        <img src={bostBr} alt="exide" />
+                        <a href={`/brands/${bost}`}>
+                            <img src={bostBr} alt="exide" />
+                        </a>
                     </div>
                     <div className="card-content center">
-                        <a href={`/brands/${bost}`}><p className="blue-text product-title">BOST Корея</p></a>
+                        <a href={`/brands/${bost}`}>
+                            <p className="blue-text product-title">BOST Корея</p>
+                        </a>
                     </div>
                 </div>
             </div>
             <div className="col s6 m3 l3 xl3">
                 <div className="card">
                     <div className="card-image">
-                        <img src={tuborBr} alt="exide" />
+                        <a href={`/brands/${tubor}`}>
+                            <img src={tuborBr} alt="exide" />
+                        </a>
                     </div>
                     <div className="card-content center">
-                        <a href={`/brands/${tubor}`}><p className="blue-text product-title">TUBOR Россия</p></a>
+                        <a href={`/brands/${tubor}`}>
+                            <p className="blue-text product-title">TUBOR Россия</p>
+                        </a>
                     </div>
                 </div>
             </div>
             <div className="col s6 m3 l3 xl3">
                 <div className="card">
                     <div className="card-image">
-                        <img src={istaBr} alt="exide" />
+                        <a href={`/brands/${ista}`}>
+                            <img src={istaBr} alt="exide" />
+                        </a>
                     </div>
                     <div className="card-content center">
-                        <a href={`/brands/${ista}`}><p className="blue-text product-title">ISTA Украина</p></a>
+                        <a href={`/brands/${ista}`}>
+                            <p className="blue-text product-title">ISTA Украина</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -65,20 +81,28 @@ const BrandAccumulators = () => {
             <div className="col s6 m3 l3 xl3">
                 <div className="card">
                     <div className="card-image">
-                        <img src={gladiatorBr} alt="exide" />
+                        <a href={`/brands/${gladiator}`}>
+                            <img src={gladiatorBr} alt="exide" />
+                        </a>
                     </div>
                     <div className="card-content center">
-                        <a href={`/brands/${gladiator}`}><p className="blue-text product-title">GLADIATOR Россия</p></a>
+                        <a href={`/brands/${gladiator}`}>
+                            <p className="blue-text product-title">GLADIATOR Россия</p>
+                        </a>
                     </div>
                 </div>
             </div>
             <div className="col s6 m3 l3 xl3">
                 <div className="card">
                     <div className="card-image">
-                        <img src={kainarBr} alt="exide" />
+                        <a href={`/brands/${kainar}`}>
+                            <img src={kainarBr} alt="exide" />
+                        </a>
                     </div>
                     <div className="card-content center">
-                        <a href={`/brands/${kainar}`}><p className="blue-text product-title">KAINAR Казакстан</p></a>
+                        <a href={`/brands/${kainar}`}>
+                            <p className="blue-text product-title">KAINAR Казакстан</p>
+                        </a>
                     </div>
                 </div>
             </div>

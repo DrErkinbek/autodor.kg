@@ -15,10 +15,10 @@ const AccessoryState = (props) => {
     }
     const [state, dispatch] = useReducer(accessoryReducer, initialState);
 
-    //Set loading
+    
     const setLoading = () => dispatch({ type: SET_LOADING });
 
-    // get Accessories
+    
     const getAccessories = async () => {
         setLoading();
 
@@ -34,7 +34,7 @@ const AccessoryState = (props) => {
             payload: json
         })
     }
-    // Get Accessory
+    
     const getAccessory = async (productCode) => {
         setLoading();
 
