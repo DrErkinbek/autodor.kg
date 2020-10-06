@@ -29,7 +29,7 @@ const Static = () => {
             indicators: false,
             height: 500,
             transition: 500,
-            interval: 6000
+            interval: 1500
         });
       });
     return(
@@ -137,7 +137,7 @@ const Static = () => {
                             <h2 className="center yellow-text"><i className="material-icons">card_giftcard</i></h2>
                             <h5 className="center blue-text">Выгодно</h5>
 
-                            <p className="center">Прием старого АКБ на утилизацию или в зачет нового по выгодной цене.</p>
+                            <p className="center">Прием старого АКБ на утилизацию или в за счет нового по выгодной цене.</p>
                         </div>
                     </div>
                 </div>

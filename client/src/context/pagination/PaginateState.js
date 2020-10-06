@@ -7,7 +7,7 @@ import AccessoryContext from '../accessory/AccessoryContext';
 const PaginateState = (props) => {
     const initialState = {
         currentPage: 1,
-        cardPerPage: 10,
+        cardPerPage: 16,
     }
     const accessoryContext = useContext(AccessoryContext);
     const { accessories } = accessoryContext;

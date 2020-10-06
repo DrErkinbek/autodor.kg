@@ -15,10 +15,8 @@ const AccessoryState = (props) => {
     }
     const [state, dispatch] = useReducer(accessoryReducer, initialState);
 
-    
     const setLoading = () => dispatch({ type: SET_LOADING });
 
-    
     const getAccessories = async () => {
         setLoading();
 

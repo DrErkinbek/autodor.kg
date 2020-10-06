@@ -37,7 +37,7 @@ const CallBtnModal = () => {
         <div id="call-modal" className="modal" style={modalStyle}>
             <div className="modal-content">
                     <div className="modal-header right">
-                        <a href="#!" className="modal-close waves-effect">
+                        <a href="#!" className="modal-close">
                             <i className="small material-icons">close</i>
                         </a>
                     </div>
