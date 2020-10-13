@@ -39,19 +39,19 @@ const Static = () => {
                 <li>
                     <img src={slide1} alt="автопарк бишкек" />
                     <div className="caption center-align">
-                        <h4 className="white-text">АККУМУЛЯТОРЫ для любых транспортных средств.</h4>
+                        <h4 className="white-text">Аккумуляторы для любых транспортных средств</h4>
                     </div>
                 </li>
                 <li>
                     <img src={slide2} alt="шины бишкек" />
                     <div className="caption center-align">
-                        <h4 className="yellow-text">Шины и диски.</h4>
+                        <h4 className="yellow-text">Шины и диски</h4>
                     </div>
                 </li>
                 <li>
                     <img src={slide3} alt="автоаксессуары бишкек" />
                     <div className="caption right-align">
-                        <h4 className="blue-text">Автоаксессуары.</h4>
+                        <h4 className="blue-text">Аксессуары</h4>
                     </div>
                 </li>
             </ul>
@@ -117,27 +117,27 @@ const Static = () => {
                     <div className="col s12 m4">
                         <div className="icon-block">
                             <h2 className="center yellow-text"><i className="material-icons">check_box</i></h2>
-                            <h5 className="center blue-text">Качественно</h5>
+                            <h5 className="center blue-text">качественно</h5>
                             
-                            <p className="center">Подбор АКБ квалифицированным специалистам, гарантия и обслуживание.</p>
+                            <p className="center">Подбор АКБ квалифицированным специалистом, гарантия и обслуживание.</p>
                         </div>
                     </div>
 
                     <div className="col s12 m4">
                         <div className="icon-block">
                             <h2 className="center yellow-text"><i className="material-icons">local_grocery_store</i></h2>
-                            <h5 className="center blue-text">Бесплатно</h5>
+                            <h5 className="center blue-text">бесплатно</h5>
 
-                            <p className="center">Бесплатная доставка по Бишкеку и замена АКБ, диагностика электрооборудования автомобиля.</p>
+                            <p className="center">Бесплатная доставка по городу Бишкек и замена АКБ, диагностика электрооборудования автомобиля.</p>
                         </div>
                     </div>
 
                     <div className="col s12 m4">
                         <div className="icon-block">
                             <h2 className="center yellow-text"><i className="material-icons">card_giftcard</i></h2>
-                            <h5 className="center blue-text">Выгодно</h5>
+                            <h5 className="center blue-text">выгодно</h5>
 
-                            <p className="center">Прием старого АКБ на утилизацию или в за счет нового по выгодной цене.</p>
+                            <p className="center">Прием старого АКБ на утилизацию или в счёт нового по выгодной цене.</p>
                         </div>
                     </div>
                 </div>
@@ -146,7 +146,7 @@ const Static = () => {
                     <div className="col s12 m4">
                         <div className="icon-block">
                             <h2 className="center yellow-text"><i className="material-icons">access_time</i></h2>
-                            <h5 className="center blue-text">Надежно</h5>
+                            <h5 className="center blue-text">надёжно</h5>
 
                             <p className="center">Официальная гарантия и послегарантийное обслуживание.</p>
                         </div>
@@ -155,7 +155,7 @@ const Static = () => {
                     <div className="col s12 m4">
                         <div className="icon-block">
                             <h2 className="center yellow-text"><i className="material-icons">monetization_on</i></h2>
-                            <h5 className="center blue-text">УДОБНО</h5>
+                            <h5 className="center blue-text">удобно</h5>
 
                             <p className="center">Оплата наличными на месте.</p>
                         </div>
@@ -164,7 +164,7 @@ const Static = () => {
                     <div className="col s12 m4">
                         <div className="icon-block">
                             <h2 className="center yellow-text"><i className="material-icons">flash_on</i></h2>
-                            <h5 className="center blue-text">ЗАРЯДИМ</h5>
+                            <h5 className="center blue-text">зарядим</h5>
 
                             <p className="center">Прикуривание автомобиля, диагностика и восстановление старой батареи в нашем центре.</p>
                         </div>

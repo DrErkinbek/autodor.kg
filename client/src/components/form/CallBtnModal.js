@@ -49,7 +49,7 @@ const CallBtnModal = () => {
                             <div className="input-field col s6">
                                 <input id="icon_prefix" type="text" className="validate"
                                 onChange={onChange} minLength="4"
-                                placeholder="Ваша имя" name="customer_name" value={customer_name}
+                                placeholder="Ваше имя" name="customer_name" value={customer_name}
                                 required />
                             </div>
                             <div className="input-field col s6">

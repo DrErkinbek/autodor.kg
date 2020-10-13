@@ -38,7 +38,7 @@ const Accumulator = (props) => {
                         <table>
                             <tbody>
                                 <tr>
-                                    <td>Емкость:</td>
+                                    <td>Ёмкость:</td>
                                     <td>{accumulator.capacity} А/ч</td>
                                 </tr>
                                 <tr>

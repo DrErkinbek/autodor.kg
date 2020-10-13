@@ -33,7 +33,7 @@ const Tires = () => {
                             </div>
                             <div className="card-action center">
                                 <a className="blue modal-trigger btn-small" 
-                                href={`/tires/${tire.productCode}`}>Подробно</a>
+                                href={`/tires/${tire.productCode}`}>Подробнее</a>
                             </div>
                         </div>
                     </div>

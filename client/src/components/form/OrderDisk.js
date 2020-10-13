@@ -56,7 +56,7 @@ const OrderDisk = (props) => {
                 <form onSubmit={onSubmit}>
                     <div className="col s12 m6 l6 xl6">
                         <div className="form-group">
-                            <label>Ваша имя</label>
+                            <label>Ваше имя</label>
                             <input className="form-control" type="text"
                             onChange={onChange} minLength="4"
                             name="customer_name" value={customer_name}
