@@ -7,7 +7,7 @@ const Footer = () => {
                 <div className="row ">
                     <div className="col s12 m4 l4 xl4">
                         <h5 className="yellow-text center">Наш адрес:</h5>
-                        <p className="grey-text text-lighten-4 center">Дордой, Кожевенная 36а/2</p>
+                        <p className="grey-text text-lighten-4 center">Рынок Дордой Автозапчасти, <br />боковой ряд контейнер 15-16</p>
                         <div className="center">
                             <a className="blue darken-1 btn"
                             href="https://2gis.kg/bishkek/search/%D0%B0%D0%B2%D1%82%D0%BE%D1%81%D1%82%D0%B0%D1%80%D1%82%20%D0%B4%D0%BE%D1%80%D0%B4%D0%BE%D0%B9/firm/70000001041801737/74.621242%2C42.947197?m=74.621263%2C42.947176%2F15.54">
@@ -33,7 +33,7 @@ const Footer = () => {
                                 <h6 className="white-text center">0770 38 72 34</h6>
                             </li>
                             <li>
-                                <h6 className="white-text center">0555 74 57 75</h6>
+                                <h6 className="white-text center">0700 38 72 34</h6>
                             </li>
                         </ul>
                     </div>

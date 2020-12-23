@@ -17,9 +17,6 @@ import OrderAccumulator from './components/form/OrderAccumulator';
 import Tires from './components/tire/Tires';
 import Tire from './components/tire/Tire';
 import OrderTire from './components/form/OrderTire';
-import Disks from './components/disk/Disks';
-import Disk from './components/disk/Disk';
-import OrderDisk from './components/form/OrderDisk';
 import Accessories from './components/accessory/Accessories';
 import Accessory from './components/accessory/Accessory';
 import OrderAccessory from './components/form/OrderAccessory';
@@ -28,7 +25,6 @@ import Pagination from './components/layout/Pagination';
 
 import AccumulatorState from './context/accumulator/AccumulatorState';
 import TireState from './context/tire/TireState';
-import DiskState from './context/disk/DiskState';
 import AccessoryState from './context/accessory/AccessoryState';
 import PaginateState from './context/pagination/PaginateState';
 
@@ -51,7 +47,6 @@ const App = () => {
     M.AutoInit();
   });
   return (
-    <DiskState>
       <AccessoryState>
         <TireState>
           <AccumulatorState>
@@ -90,6 +85,12 @@ const App = () => {
                             <OrderAccumulator {...props} />
                           </>
                         )} />
+                        <Route exact path="/brands/westa/:productCode" render={props =>(
+                          <>
+                            <Accumulator {...props} />
+                            <OrderAccumulator {...props} />
+                          </>
+                        )} />
                         <Route exact path="/brands/gladiator/:productCode" render={props =>(
                           <>
                             <Accumulator {...props} />
@@ -113,17 +114,6 @@ const App = () => {
                             <OrderTire {...props} />
                           </>
                         )} />
-                        <Route exact path="/disks" render={props =>(
-                          <>
-                            <Disks {...props} />
-                          </>
-                        )} />
-                        <Route exact path="/disks/:productCode" render={props =>(
-                            <>
-                              <Disk {...props} />
-                              <OrderDisk {...props} />
-                            </>
-                        )} />
                         <Route exact path="/accessories" render={props =>(
                           <>
                             <Accessories {...props} />
@@ -146,7 +136,6 @@ const App = () => {
           </AccumulatorState>
         </TireState>
       </AccessoryState>
-    </DiskState>
   );
 }
 

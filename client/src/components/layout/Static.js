@@ -7,7 +7,6 @@ import slide3 from '../images/slider3.jpg';
 
 import cardImg1 from '../images/card1.jpg';
 import cardImg2 from '../images/card2.jpg';
-import cardImg3 from '../images/card3.jpg';
 import cardImg4 from '../images/card4.jpg';
 
 import bostLogo from '../images/bost-logo.jpg';
@@ -45,7 +44,7 @@ const Static = () => {
                 <li>
                     <img src={slide2} alt="шины бишкек" />
                     <div className="caption center-align">
-                        <h4 className="yellow-text">Шины и диски</h4>
+                        <h4 className="yellow-text">Шины</h4>
                     </div>
                 </li>
                 <li>
@@ -60,7 +59,7 @@ const Static = () => {
             <div className="row">
                 <h4 className="center">
                 <span className="blue-text">Каталог</span> товаров</h4>
-                <div className="col s12 m3">
+                <div className="col s12 m4">
                     <div className="card">
                         <div className="card-image">
                             <a href="/brands">
@@ -72,7 +71,7 @@ const Static = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col s12 m3">
+                <div className="col s12 m4">
                     <div className="card">
                         <div className="card-image">
                             <a href="/tires">
@@ -84,19 +83,7 @@ const Static = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col s12 m3">
-                    <div className="card">
-                        <div className="card-image">
-                            <a href="/disks">
-                                <img src={cardImg3} alt="шины бишкек" />
-                            </a>
-                        </div>
-                        <div className="card-content center">
-                            <a href="/disks" className="blue-text flow-text">Диски</a>
-                        </div>
-                    </div>
-                </div>
-                <div className="col s12 m3">
+                <div className="col s12 m4">
                     <div className="card">
                         <div className="card-image">
                             <a href="/accessories">
@@ -113,7 +100,7 @@ const Static = () => {
         <div className="container">
             <div className="section">
                 <div className="row">
-                    <div><h4 className="center blue-text">Преимущества работа с нами</h4></div>
+                    <div><h4 className="center blue-text">Преимущества работы с нами</h4></div>
                     <div className="col s12 m4">
                         <div className="icon-block">
                             <h2 className="center yellow-text"><i className="material-icons">check_box</i></h2>

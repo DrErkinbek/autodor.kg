@@ -5,6 +5,7 @@ import tuborBr from '../images/brand-tubor.png';
 import istaBr from '../images/brand-ista.png';
 import gladiatorBr from '../images/brand-gladiator.png';
 import kainarBr from '../images/brand-kainar.png';
+import westaBr from '../images/brand-westa.png';
 
 const BrandAccumulators = () => {
     const [brands] = useState({
@@ -12,10 +13,11 @@ const BrandAccumulators = () => {
         bost: 'bost',
         tubor: 'tubor',
         ista: 'ista',
+        westa: 'westa',
         gladiator: 'gladiator',
         kainar: 'kainar'
     });
-    const {exide, bost, tubor, ista, gladiator, kainar } = brands;
+    const {exide, bost, tubor, ista, westa, gladiator, kainar } = brands;
     
     return(
         <>
@@ -24,7 +26,7 @@ const BrandAccumulators = () => {
                 <div className="card">
                     <div className="card-image">
                         <a href={`/brands/${kainar}`}>
-                            <img src={kainarBr} alt="exide" />
+                            <img src={kainarBr} alt="kainar" />
                         </a>
                     </div>
                     <div className="card-content center">
@@ -38,7 +40,7 @@ const BrandAccumulators = () => {
                 <div className="card">
                     <div className="card-image">
                         <a href={`/brands/${gladiator}`}>
-                            <img src={gladiatorBr} alt="exide" />
+                            <img src={gladiatorBr} alt="gadiator" />
                         </a>
                     </div>
                     <div className="card-content center">
@@ -52,7 +54,7 @@ const BrandAccumulators = () => {
                 <div className="card">
                     <div className="card-image">
                         <a href={`/brands/${tubor}`}>
-                            <img src={tuborBr} alt="exide" />
+                            <img src={tuborBr} alt="tubor" />
                         </a>
                     </div>
                     <div className="card-content center">
@@ -66,7 +68,7 @@ const BrandAccumulators = () => {
                 <div className="card">
                     <div className="card-image">
                         <a href={`/brands/${ista}`}>
-                            <img src={istaBr} alt="exide" />
+                            <img src={istaBr} alt="ista" />
                         </a>
                     </div>
                     <div className="card-content center">
@@ -81,8 +83,22 @@ const BrandAccumulators = () => {
             <div className="col s6 m3 l3 xl3">
                 <div className="card">
                     <div className="card-image">
+                        <a href={`/brands/${westa}`}>
+                            <img src={westaBr} alt="westa" />
+                        </a>
+                    </div>
+                    <div className="card-content center">
+                        <a href={`/brands/${westa}`}>
+                            <p className="blue-text product-title">Westa Украина</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div className="col s6 m3 l3 xl3">
+                <div className="card">
+                    <div className="card-image">
                         <a href={`/brands/${bost}`}>
-                            <img src={bostBr} alt="exide" />
+                            <img src={bostBr} alt="bost" />
                         </a>
                     </div>
                     <div className="card-content center">
