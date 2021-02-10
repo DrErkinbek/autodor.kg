@@ -15,6 +15,7 @@ import Accumulators from './components/accumulator/Accumulators';
 import Accumulator from './components/accumulator/Accumulator';
 import OrderAccumulator from './components/form/OrderAccumulator';
 import Tires from './components/tire/Tires';
+import SeasonTires from './components/layout/SeasonTires';
 import Tire from './components/tire/Tire';
 import OrderTire from './components/form/OrderTire';
 import Accessories from './components/accessory/Accessories';
@@ -103,12 +104,19 @@ const App = () => {
                             <OrderAccumulator {...props} />
                           </>
                         )} />
-                      <Route exact path="/tires" render={props =>(
+                      <Route exact path="/tires" component={SeasonTires} />
+                      <Route exact path="/tires/:season" render={props =>(
                           <>
                             <Tires {...props} />
                           </>
                         )} />
-                      <Route exact path="/tires/:productCode" render={props =>(
+                        <Route exact path="/tires/summer/:productCode" render={props =>(
+                          <>
+                            <Tire {...props} />
+                            <OrderTire {...props} />
+                          </>
+                        )} />
+                        <Route exact path="/tires/winter/:productCode" render={props =>(
                           <>
                             <Tire {...props} />
                             <OrderTire {...props} />

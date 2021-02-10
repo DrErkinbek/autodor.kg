@@ -4,6 +4,7 @@ import tireReducer from './TireReducer';
 
 import {
     GET_TIRES,
+    GET_TIRESBYSEASON,
     GET_TIRE,
     SET_LOADING
 } from '../types';
@@ -21,7 +22,7 @@ const TireState = (props) => {
     const getTires = async () => {
         setLoading();
 
-        const response = await fetch(`http://autodor.com.kg/api-v1/tires`, {
+        const response = await fetch(`http://localhost:5000/api-v1/tires`, {
             method: 'GET',
             headers: {
                 'Accept': 'application/json'
@@ -33,11 +34,27 @@ const TireState = (props) => {
             payload: json
         });
     }
-    
+    const getTiresBySeason = async (season) => {
+        
+        setLoading();
+
+        const response = await fetch(`http://localhost:5000/api-v1/tires/${season}`, {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+        const json = await response.json();
+        dispatch({
+            type: GET_TIRESBYSEASON,
+            payload: json
+        });
+    }
+
     const getTire = async (productCode) => {
         setLoading();
 
-        const response = await fetch(`http://autodor.com.kg/api-v1/tires/tire/${productCode}`, {
+        const response = await fetch(`http://localhost:5000/api-v1/tires/tire/${productCode}`, {
             method: 'GET',
             headers: {
                 'Accept': 'application/json'
@@ -55,6 +72,7 @@ const TireState = (props) => {
         tire: state.tire,
         loading: state.loading,
         getTires,
+        getTiresBySeason,
         getTire
     }}>{props.children}</TireContext.Provider>
 

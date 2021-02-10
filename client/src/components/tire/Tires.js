@@ -3,14 +3,15 @@ import TireContext from '../../context/tire/TireContext';
 import Spinner from '../layout/Spinner';
 import Cookies from 'js-cookie';
 
-const Tires = () => {
+const Tires = (props) => {
     const tireContext = useContext(TireContext);
-    const {tires, loading, getTires} = tireContext;
+    const {tires, loading, getTiresBySeason } = tireContext;
 
     useEffect(() => {
+        const season = props.match.params.season;
         Cookies.set('servingTires', 'keepServingTires=true', 
         { secure: true, expires: 7, path: '/tires' });
-        getTires()
+        getTiresBySeason(season)
         // eslint-disable-next-line
     }, []);
     if(loading){
@@ -23,7 +24,7 @@ const Tires = () => {
                     <div className="col s12 m3 l3 xl3" key={tire._id}>
                         <div className="card">
                             <div className="card-image">
-                                <a href={`/tires/${tire.productCode}`}>
+                                <a href={`/tires/${tire.producer}/${tire.productCode}`}>
                                     <img alt={tires.name} src={tire.imageUrl} />
                                 </a>
                             </div>
@@ -33,7 +34,7 @@ const Tires = () => {
                             </div>
                             <div className="card-action center">
                                 <a className="blue modal-trigger btn-small" 
-                                href={`/tires/${tire.productCode}`}>Подробнее</a>
+                                href={`/tires/${tire.producer}/${tire.productCode}`}>Подробнее</a>
                             </div>
                         </div>
                     </div>

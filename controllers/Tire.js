@@ -15,6 +15,24 @@ const getTires = async (req, res) => {
         res.status(500).send('Server Error');
     }
 }
+
+// Route GET REQUEST Endpoint /api-v1/tires/:season
+// GET Tyres by Season
+const getTiresBySeason = async (req, res) => {
+    const season  = req.params.season;
+
+    try {
+
+        const tires = await Tire.find({ producer: season });
+
+        res.status(200).json(tires);
+    }
+    catch(err) {
+        console.error(err.message);
+        res.status(500).send('Server Error');
+    }
+}
+
 // Route GET REQUEST Endpoint /api-v1/tires/:productCode
 // GET Tire by Product Code
 const getTire =  async (req, res) => {
@@ -129,6 +147,7 @@ const deleteTireById = async (req, res) => {
 }
 module.exports = {
     getTires,
+    getTiresBySeason,
     getTire,
     addTire,
     updateTireById,
