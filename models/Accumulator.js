@@ -5,12 +5,12 @@ const AccumulatorSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    price: {
-        type: Number,
-        required: true, 
+    sizes: {
+        type: String,
+        required: true
     },
     imageUrl: {
-        type: String,
+        type: Object,
         required: true
     },
     date: {
@@ -28,22 +28,6 @@ const AccumulatorSchema = mongoose.Schema({
     productCode: {
         type: String,
         required: true
-    },
-    capacity: {
-        type: String,
-        required: true
-    },
-    amperage: {
-        type: String,
-        requred: true,
-    },
-    size: {
-        type: String,
-        requred: true,
-    },
-    polarity: {
-        type: String,
-        requred: true,
     }
 });
 

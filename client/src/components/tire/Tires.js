@@ -21,9 +21,9 @@ const Tires = (props) => {
             <div className="row">
                 {tires.map(tire => {
                     return(
-                    <div className="col s12 m3 l3 xl3" key={tire._id}>
+                    <div className="col s6 m3 l3 xl3" key={tire._id}>
                         <div className="card">
-                            <div className="card-image">
+                            <div className="card-image tire-size">
                                 <a href={`/tires/${tire.producer}/${tire.productCode}`}>
                                     <img alt={tires.name} src={tire.imageUrl} />
                                 </a>

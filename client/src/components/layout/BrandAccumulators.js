@@ -6,6 +6,7 @@ import istaBr from '../images/brand-ista.png';
 import gladiatorBr from '../images/brand-gladiator.png';
 import kainarBr from '../images/brand-kainar.png';
 import westaBr from '../images/brand-westa.png';
+import veslineBr from '../images/brand-vesline.png';
 
 const BrandAccumulators = () => {
     const [brands] = useState({
@@ -15,9 +16,10 @@ const BrandAccumulators = () => {
         ista: 'ista',
         westa: 'westa',
         gladiator: 'gladiator',
-        kainar: 'kainar'
+        kainar: 'kainar',
+        vesline: 'vesline'
     });
-    const {exide, bost, tubor, ista, westa, gladiator, kainar } = brands;
+    const {exide, bost, tubor, ista, westa, gladiator, kainar, vesline } = brands;
     
     return(
         <>
@@ -118,6 +120,20 @@ const BrandAccumulators = () => {
                     <div className="card-content center">
                         <a href={`/brands/${exide}`}>
                             <p className="blue-text product-title">EXIDE Европа</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div className="col s6 m3 l3 xl3">
+                <div className="card">
+                    <div className="card-image">
+                        <a href={`/brands/${vesline}`}>
+                            <img src={veslineBr} alt="vesline" />
+                        </a>
+                    </div>
+                    <div className="card-content center">
+                        <a href={`/brands/${exide}`}>
+                            <p className="blue-text product-title">Vesline Турция</p>
                         </a>
                     </div>
                 </div>

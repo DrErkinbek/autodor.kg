@@ -116,7 +116,7 @@ const updateAccumulatorById =  async (req, res) => {
     if(polarity) accumulatorField.polarity = polarity;
     try{
         let accumulator = await Accumulator.findById(req.params.id);
-
+        console.log(req.params.id);
         if(!accumulator) return res.status(404).json({ message: "Accumulator Not found"});
 
         accumulator = await Accumulator.findByIdAndUpdate(req.params.id, { $set: accumulatorField }, { new: true});
