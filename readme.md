@@ -1,4 +1,4 @@
-[link](./client/md.avif)
+![MERN Stack](https://webimages.mongodb.com/_com_assets/cms/kobuybqq12c9ya16f-mernstack_visualized.png?auto=format%2Ccompress)
 
 ### MERN Stack Application Sample code
 
