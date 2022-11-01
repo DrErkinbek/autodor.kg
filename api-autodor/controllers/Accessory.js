@@ -47,7 +47,7 @@ const postAccessory = async (req, res) => {
         imageUrl, 
         description, 
         producer, 
-        productCode, 
+        productCode,
         feature,
         featureValue 
     } = req.body;
